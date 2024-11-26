@@ -7,78 +7,90 @@ import { Globe2, MessageCircle, Users } from 'lucide-react'
 export function BlockPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="h-10 w-10 bg-primary/10 rounded-xl flex items-center justify-center">
-              <Globe2 className="h-6 w-6 text-primary" />
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div className="container mx-auto px-4 py-4">
+          <nav className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Link
+                href="#"
+                className="flex items-center gap-2"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }}
+              >
+                <div className="h-10 w-10 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <Globe2 className="h-6 w-6 text-primary" />
+                </div>
+                <span className="font-semibold text-xl">Generative Grammar</span>
+              </Link>
             </div>
-            <span className="font-semibold text-xl">TranslateChat</span>
-          </div>
-          <div className="hidden md:flex items-center space-x-6">
-            <Link 
-              className="text-sm font-medium text-gray-600 hover:text-gray-900" 
-              href="#features"
-              scroll={false}
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })
-              }}
-            >
-              Features
-            </Link>
-            <Link 
-              className="text-sm font-medium text-gray-600 hover:text-gray-900" 
-              href="#solutions"
-              scroll={false}
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })
-              }}
-            >
-              Solutions
-            </Link>
-            <Link 
-              className="text-sm font-medium text-gray-600 hover:text-gray-900" 
-              href="#pricing"
-              scroll={false}
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
-              }}
-            >
-              Pricing
-            </Link>
-            <Link 
-              className="text-sm font-medium text-gray-600 hover:text-gray-900" 
-              href="#about"
-              scroll={false}
-              onClick={(e) => {
-                e.preventDefault()
-                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
-              }}
-            >
-              About Us
-            </Link>
-          </div>
-          <div className="flex items-center gap-4">
-            <Link className="text-sm font-medium text-gray-600 hover:text-gray-900" href="#">
-              Log In
-            </Link>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Start For Free
-            </Button>
-          </div>
-        </nav>
+            <div className="hidden md:flex items-center space-x-6">
+              <Link 
+                className="text-sm font-medium text-gray-600 hover:text-gray-900" 
+                href="#features"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                Features
+              </Link>
+              <Link 
+                className="text-sm font-medium text-gray-600 hover:text-gray-900" 
+                href="#solutions"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                Solutions
+              </Link>
+              <Link 
+                className="text-sm font-medium text-gray-600 hover:text-gray-900" 
+                href="#pricing"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                Pricing
+              </Link>
+              <Link 
+                className="text-sm font-medium text-gray-600 hover:text-gray-900" 
+                href="#about"
+                scroll={false}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })
+                }}
+              >
+                About Us
+              </Link>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link className="text-sm font-medium text-gray-600 hover:text-gray-900" href="#">
+                Log In
+              </Link>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Start For Free
+              </Button>
+            </div>
+          </nav>
+        </div>
       </header>
       <main className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Break Language Barriers
-          <span className="block text-primary mt-2">In Real Time</span>
+          Master Language Learning
+          <span className="block text-primary mt-2">With AI</span>
         </h1>
         <p className="max-w-2xl mx-auto text-gray-600 text-lg mb-12">
-          Connect and communicate effortlessly across languages with our AI-powered messaging platform. 
-          Experience instant, accurate translations that make global conversations feel natural and seamless.
+          Experience a revolutionary approach to language learning with our AI-powered platform. 
+          Generate natural conversations, understand grammar patterns, and achieve fluency faster.
         </p>
         <Button className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-lg">
           Start Chatting Now
@@ -315,7 +327,7 @@ export function BlockPage() {
         <section id="about" className="py-24">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-16">
-              About TranslateChat
+              About Generative Grammar
             </h2>
             <div className="max-w-3xl mx-auto">
               <div className="bg-white rounded-xl shadow-lg p-8">
@@ -325,7 +337,7 @@ export function BlockPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-lg mb-6 text-center">
-                  We're on a mission to break down language barriers and connect people across the globe. Our AI-powered platform makes real-time communication possible in any language.
+                  We're revolutionizing language learning through AI-powered pattern recognition. Our platform helps you understand the underlying structure of languages, making learning more intuitive and effective.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                   <div className="text-center">

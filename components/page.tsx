@@ -85,12 +85,13 @@ export function BlockPage() {
       </header>
       <main className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-          Master Language Learning
-          <span className="block text-primary mt-2">With AI</span>
+          Chat Across Languages
+          <span className="block text-primary mt-2">In Real Time</span>
         </h1>
         <p className="max-w-2xl mx-auto text-gray-600 text-lg mb-12">
-          Experience a revolutionary approach to language learning with our AI-powered platform. 
-          Generate natural conversations, understand grammar patterns, and achieve fluency faster.
+          Break down language barriers with our AI-powered messaging platform. 
+          Connect with anyone, anywhere, in your native language through instant, 
+          contextually accurate translations.
         </p>
         <Button className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-lg">
           Start Chatting Now
@@ -161,34 +162,34 @@ export function BlockPage() {
         <section id="features" className="py-24">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-16">
-              Powerful Translation Features
+              Seamless Communication Features
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-6 bg-white rounded-xl shadow-lg">
                 <div className="h-12 w-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                   <MessageCircle className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Real-Time Translation</h3>
+                <h3 className="text-xl font-semibold mb-3">Instant Translation</h3>
                 <p className="text-gray-600">
-                  Instant message translation in over 100 languages, powered by advanced AI technology.
+                  Chat naturally in your preferred language while others receive messages in theirs, powered by advanced AI.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg">
                 <div className="h-12 w-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Group Chats</h3>
+                <h3 className="text-xl font-semibold mb-3">Multilingual Groups</h3>
                 <p className="text-gray-600">
-                  Multi-language group conversations where everyone can speak their preferred language.
+                  Create group chats where everyone communicates in their native language, breaking down barriers in team collaboration.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg">
                 <div className="h-12 w-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                   <Globe2 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Cultural Context</h3>
+                <h3 className="text-xl font-semibold mb-3">Context-Aware</h3>
                 <p className="text-gray-600">
-                  AI-powered translations that understand and preserve cultural nuances and context.
+                  Our AI understands cultural context and nuances, ensuring your message's true meaning is preserved across languages.
                 </p>
               </div>
             </div>
@@ -197,34 +198,34 @@ export function BlockPage() {
         <section id="solutions" className="py-24">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center mb-16">
-              Translation Solutions
+              Communication Solutions
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="p-6 bg-white rounded-xl shadow-lg">
                 <div className="h-12 w-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                   <Globe2 className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Business Communication</h3>
+                <h3 className="text-xl font-semibold mb-3">Global Teams</h3>
                 <p className="text-gray-600">
-                  Enterprise-grade translation solutions for global teams and international business communications.
+                  Enable seamless collaboration across international teams with real-time multilingual communication.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg">
                 <div className="h-12 w-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                   <MessageCircle className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Customer Support</h3>
+                <h3 className="text-xl font-semibold mb-3">International Business</h3>
                 <p className="text-gray-600">
-                  Multilingual customer service solutions that help you support customers in their preferred language.
+                  Connect with clients and partners worldwide without language barriers holding you back.
                 </p>
               </div>
               <div className="p-6 bg-white rounded-xl shadow-lg">
                 <div className="h-12 w-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Educational Tools</h3>
+                <h3 className="text-xl font-semibold mb-3">Personal Connections</h3>
                 <p className="text-gray-600">
-                  Language learning and translation tools for educational institutions and students.
+                  Stay connected with friends and family around the world, each speaking in their native language.
                 </p>
               </div>
             </div>
@@ -337,22 +338,10 @@ export function BlockPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-lg mb-6 text-center">
-                  We're revolutionizing language learning through AI-powered pattern recognition. Our platform helps you understand the underlying structure of languages, making learning more intuitive and effective.
+                  We're on a mission to create a world where language differences no longer limit human connection. 
+                  Our AI-powered platform enables natural, seamless communication across languages, bringing people 
+                  together regardless of their native tongue.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">100+</div>
-                    <div className="text-gray-600">Languages Supported</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">1M+</div>
-                    <div className="text-gray-600">Active Users</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-                    <div className="text-gray-600">Support Available</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

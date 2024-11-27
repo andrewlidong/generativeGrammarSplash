@@ -1,10 +1,14 @@
 'use client'
 
+import { useState } from 'react'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Globe2, MessageCircle, Users } from 'lucide-react'
+import { LoginModal } from './login-modal'
 
 export function BlockPage() {
+  const [isLoginOpen, setIsLoginOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
@@ -75,10 +79,20 @@ export function BlockPage() {
               </Link>
             </div>
             <div className="flex items-center gap-4">
-              <Link className="text-sm font-medium text-gray-600 hover:text-gray-900" href="#">
+              <Link 
+                className="text-sm font-medium text-gray-600 hover:text-gray-900" 
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault()
+                  setIsLoginOpen(true)
+                }}
+              >
                 Log In
               </Link>
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Button 
+                className="bg-primary text-primary-foreground hover:bg-primary/90"
+                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Start For Free
               </Button>
             </div>
@@ -95,7 +109,10 @@ export function BlockPage() {
           Connect with anyone, anywhere, in your native language through instant, 
           contextually accurate translations.
         </p>
-        <Button className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-lg">
+        <Button 
+          className="bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 text-lg"
+          onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+        >
           Start Chatting Now
         </Button>
         <div className="mt-16 rounded-2xl border-8 border-black/10 shadow-2xl mx-auto max-w-4xl overflow-hidden bg-white">
@@ -349,6 +366,7 @@ export function BlockPage() {
           </div>
         </section>
       </main>
+      <LoginModal isOpen={isLoginOpen} onClose={() => setIsLoginOpen(false)} />
     </div>
   )
 }

@@ -13,17 +13,19 @@ export function BlockPage() {
             <div className="flex items-center gap-2">
               <Link
                 href="#"
-                className="flex items-center gap-2"
+                className="flex items-center gap-3"
                 scroll={false}
                 onClick={(e) => {
                   e.preventDefault()
                   window.scrollTo({ top: 0, behavior: 'smooth' })
                 }}
               >
-                <div className="h-10 w-10 bg-primary/10 rounded-xl flex items-center justify-center">
-                  <Globe2 className="h-6 w-6 text-primary" />
+                <div className="h-10 w-10 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-xl flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-emerald-200/50 via-transparent to-transparent" />
+                  <Globe2 className="h-6 w-6 text-emerald-600 relative z-10 transform -rotate-12" />
+                  <div className="absolute -bottom-2 -right-2 h-6 w-6 bg-emerald-100 rounded-full blur-sm" />
                 </div>
-                <span className="font-semibold text-xl">Generative Grammar</span>
+                <span className="font-semibold text-xl tracking-tight">Generative Grammar</span>
               </Link>
             </div>
             <div className="hidden md:flex items-center space-x-6">

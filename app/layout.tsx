@@ -16,6 +16,12 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Generative Grammar",
   description: "AI-powered language learning and translation platform",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon.svg', type: 'image/svg+xml' }
+    ]
+  }
 };
 
 export default function RootLayout({
